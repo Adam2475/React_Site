@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Buenard:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+/* fonts: quintessential fancy */
+
+#root
+{
+  width:100%;
+  height:100vh;
+  background-color: black;
+  /* margin-top: 15vh; */
+  /* font-family: 'Inter', sans-serif !important; */
+}
+
+/* :root {
+  --bs-body-font-family: "Inter", sans-serif;
+} */
+
+body
+{
+  width: 100%;
+  font-family: 'Buenard', sans-serif !important;
+}
+
+.App
+{
+  /* background-color: blue; */
+  background-color: #FFF;
+  width: 100%;
+  /* font-family: 'Inter', sans-serif !important; */
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* header module */
+
+
+.footer
+{
+  width: 100%;
+  background-color: bisque;
+}
+
+/* HEADER STYLING */
+
+.header
+{
+  width: 100%;
+  height: auto;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1em !important;
+  /* background-image: url('./assets/background-1.png'); */
+  /* background-size: cover;   */
+  /* background-position: center;  
+  background-repeat: no-repeat;  */
+  display: flex;
+}
+
+.navbar-nav
+{
+  color: #DDD;
+  /* width: 5em !important; */
+}
+
+.logo
+{
+  height: 7vh;
+  width: 6em;
+}
+
+/* MAIN STYLING */
+
+.camere {
+  padding: 3.5em;
+  margin: auto;
+  width: 100%;
+}
+
+.content {
+  padding: 5em;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.contentImg{
+  padding:3em;
+  text-align: center;
+}
+
+/* img.contentImg
+{
+box-shadow: 5px 10px #888888;
+} */
+
+.contentText {
+  text-align: left;
+}
+
+/* header carousel */
+/* banner carousel */
+.banner
+{
+  width: 100%;
+  height: 100vh;
+  /* object-fit: contain; */
+  /* object-position: center; */
+  /* background-color: black; */
+  filter: brightness(80%);
+}
+
+img.banner{
+  height: auto;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* height: auto; */
+}
+
+.carousel-text {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  color: aliceblue;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+  z-index: 2;
+  font-family: 'Cardo', sans-serif !important;
+}
+
+.carousel-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+
+.carousel-text p {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: -6px;
+  font-family: 'Quintessential', sans-serif !important;
+}
+
+/* .carousel-text-secondary
+{
+
+} */
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* ////////////// */
+/* FOOTER STYLING */
+/* ////////////// */
+
+.footer
+{
+  background-image: url('./assets/background-1.png');
+  background-size: cover;        /* Make it cover the whole container */
+  background-position: center;   /* Center the image */
+  background-repeat: no-repeat;  /* Avoid tiling */
+  background-color: #222;
+  color: #DDD;
+  height: 40vh;
+  text-align: center;
+  padding: 3em;
+}
+
+.linkList
+{
+  list-style: none;
+}
+
+.contactList
+{
+  list-style: none;
+}
+
+/* //////////// */
+/* CARD STYLING */
+/* //////////// */
+
+.MyCard
+{
+  height: 80vh !important;
+  width: 30em !important;
+  padding: 0;
+}
+
+.cardImage
+{
+  height: 50%;
+  /* margin: 0 !important; */
+}
+
+/* MAP STYLING */
+
+.map-container {
+  width: 100%;
+  height: calc(100vh - 80px);
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* .map-container * {
+  pointer-events: auto !important;
+} */
+
+.map-container > div {
+  width: 100%;
+  height: 100%;
+}
