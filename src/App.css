@@ -7,12 +7,14 @@
 {
   width:100%;
   height:100vh;
+  overflow-x: hidden;
 }
 
 body
 {
   width: 100%;
   font-family: 'Buenard', sans-serif !important;
+  /* overflow-x: hidden; */
 }
 
 .App
@@ -118,6 +120,7 @@ body
   .contentImg{
     padding:0em;
     text-align: center;
+    overflow: hidden;
   }
   .content {
     padding-left: 0em;
@@ -304,4 +307,85 @@ img.banner{
 .map-container > div {
   width: 100%;
   height: 100%;
+}
+
+/* BOOKING MODAL POPUP */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+/* Modal box */
+.modal-content {
+  background: #fff !important;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  animation: slideUp 0.3s ease-out;
+  /* background-color: red;
+  z-index: 1000; */
+}
+
+/* Modal heading */
+.modal-content h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+  color: black;
+}
+
+/* WhatsApp link */
+.modal-content a {
+  display: inline-block;
+  background: #25D366; /* WhatsApp green */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.8em 1.2em;
+  border-radius: 8px;
+  margin-top: 1em;
+  transition: background 0.2s ease-in-out;
+}
+
+.modal-content a:hover {
+  background: #1ebe5d;
+}
+
+/* Close button */
+.modal-content button {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  margin-top: 1.5em;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s ease-in-out;
+}
+
+.modal-content button:hover {
+  color: #000;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }

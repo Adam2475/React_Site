@@ -13,6 +13,8 @@ import img6 from '../../assets/cam6.jpg';
 import img7 from '../../assets/cam7.jpg';
 import Banner2 from '../../assets/banner2.jpg';
 
+import { useState } from 'react';
+
 import MyCard from '../cards/Card';
 
 const cardsData = [
@@ -25,6 +27,15 @@ const cardsData = [
 ];
 
 function CardCarousel() {
+  const [showModal, setShowModal] = useState(false);
+   const whatsappNumber = "+39 353 398 3131";
+   const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   return (
     <div style={{
         maxWidth: '1900px',
@@ -45,8 +56,8 @@ function CardCarousel() {
         loop={true}
         breakpoints={{
           0: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          768: { slidesPerView: 1 },
+          1024: { slidesPerView: 2 },
         }}
         style={{
           padding: '20px 0',
@@ -60,10 +71,23 @@ function CardCarousel() {
               justifyContent: 'center',
             }}
           >
-            <MyCard {...card} />
+            <MyCard {...card} onBookClick={handleOpenModal} />
           </SwiperSlide>
         ))}
       </Swiper>
+
+        {showModal && (
+        <div className="modal-overlay" onClick={handleCloseModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <h2>Prenota la tua camera</h2>
+            <p>Chiama o scrivi su WhatsApp per prenotare:</p>
+            <a href={`https://wa.me/${whatsappNumber.replace(/\s/g, '')}`} target="_blank" rel="noopener noreferrer">
+              {whatsappNumber}
+            </a>
+            <button onClick={handleCloseModal}>Chiudi</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

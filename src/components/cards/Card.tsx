@@ -5,10 +5,10 @@ type MyCardProps = {
   title: string;
   text: string;
   img: string;
-  link: string;
+  onBookClick: () => void; 
 };
 
-function MyCard({ title, text, img, link }: MyCardProps) {
+function MyCard({ title, text, img, onBookClick }: MyCardProps) {
   return (
     <Card className='MyCard'
       style={{
@@ -23,7 +23,7 @@ function MyCard({ title, text, img, link }: MyCardProps) {
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{text}</Card.Text>
-        <Button variant="primary" href={link}>
+        <Button variant="primary" onClick={onBookClick}>
           Go somewhere
         </Button>
       </Card.Body>

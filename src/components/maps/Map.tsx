@@ -18,6 +18,7 @@ export default function Map2() {
             defaultZoom={18}
             defaultCenter={position}
             mapId={import.meta.env.VITE_MAP_ID}
+            gestureHandling="cooperative"
             //gestureHandling="greedy"    // lets you drag + scroll
             disableDefaultUI={false}    // keeps UI controls
             //zoomControl={true}          // shows zoom buttons
