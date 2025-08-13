@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Banner1 from '../../assets/banner1.jpg';
 import Banner2 from '../../assets/banner2.jpg';
 
-function CarouselTop() {
+function HeaderCarousel() {
   return (
     <div className="carousel-wrapper">
       <div className="carousel-text">
@@ -34,4 +34,4 @@ function CarouselTop() {
   );
 }
 
-export default CarouselTop;
+export default HeaderCarousel;

@@ -26,13 +26,13 @@ const cardsData = [
 
 function CardCarousel() {
   return (
-    <div
-      style={{
+    <div style={{
         maxWidth: '1900px',
         margin: '0 auto',
-        padding: '2rem 2rem',
-      }}
-    >
+        padding: '2rem 2rem', }}
+
+      className='stanze'>
+      <h1>Esplora le nostre camere</h1>
       <Swiper
         modules={[Autoplay]}
         spaceBetween={50} // less gap between cards

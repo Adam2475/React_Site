@@ -1,12 +1,12 @@
 import NavigationList from './lists/navigationList'
-import CarouselTop from './carousels/carousel'
+import CarouselTop from './carousels/HeaderCarousel'
 
 function Header()
 {
     return (
     <header className="header">
         <NavigationList/>
-        <CarouselTop/>
+        {/* <CarouselTop/> */}
     </header>)
 }
 

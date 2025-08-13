@@ -15,7 +15,7 @@ export default function Map2() {
     <APIProvider apiKey={import.meta.env.VITE_APP_GOOGLE_MAPS_API_KEY}>
       <div className="map-container">
         <Map
-            defaultZoom={15}
+            defaultZoom={18}
             defaultCenter={position}
             mapId={import.meta.env.VITE_MAP_ID}
             //gestureHandling="greedy"    // lets you drag + scroll
@@ -23,7 +23,7 @@ export default function Map2() {
             //zoomControl={true}          // shows zoom buttons
           />
           <AdvancedMarker position={position}>
-            <Pin background={"grey"} borderColor={"green"} glyphColor={"purple"}></Pin>
+            {/* <Pin background={"grey"} borderColor={"green"} glyphColor={"purple"}></Pin> */}
 
           </AdvancedMarker>
 
