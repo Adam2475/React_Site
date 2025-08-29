@@ -23,11 +23,9 @@ export default function Map2() {
             disableDefaultUI={false}    // keeps UI controls
             //zoomControl={true}          // shows zoom buttons
           />
-          <AdvancedMarker position={position}>
+           <AdvancedMarker position={position}> 
             {/* <Pin background={"grey"} borderColor={"green"} glyphColor={"purple"}></Pin> */}
-
-          </AdvancedMarker>
-
+           </AdvancedMarker>
       </div>
     </APIProvider>
   );
