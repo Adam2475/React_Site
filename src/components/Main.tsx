@@ -15,7 +15,7 @@ function Main()
                     </p>
                 </div>
                 <div className="showButton">
-                    <Button href="/history" variant="success">Scopri di più</Button>
+                    <Button href="#footer" variant="success">Contattaci</Button>
                 </div>
             </div>
             <div className="col-lg-6 col-md-12 contentImg">

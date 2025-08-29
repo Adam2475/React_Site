@@ -44,7 +44,8 @@ body
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 1em !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
   display: flex;
 }
 
@@ -217,13 +218,13 @@ img.banner{
 .contactList
 {
   list-style: none;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   margin-top: 1.5em;
   /* display: flex; */
   /* flex-direction: column;
   align-items: center;
   justify-content: center; */
-  padding: 2em;
+  padding: 0.5em;
 }
 
 .contactList li {

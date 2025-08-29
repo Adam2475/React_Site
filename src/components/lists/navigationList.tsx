@@ -12,8 +12,8 @@ function Header() {
             <Navbar.Collapse id="navbar-nav">
                 <Nav className="ms-auto">
                     <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/rooms">Stanze</Nav.Link>
-                    <Nav.Link href="/history">Storia</Nav.Link>
+                    <Nav.Link href="#stanze">Stanze</Nav.Link>
+                    {/* <Nav.Link href="/history">Storia</Nav.Link> */}
                     <Nav.Link href="#footer">Contatti</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
